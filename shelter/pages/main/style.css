@@ -259,8 +259,6 @@ body {
   color: #4c4c4c;
 }
 
-/*//////////////*/
-
 .colored {
   background: #f6f6f6;
 }
@@ -339,4 +337,41 @@ body {
   display: block;
   margin-left: 470px;
   width: 261px;
+}
+
+#help {
+  padding-top: 70px;
+
+  min-height: 691px;
+}
+
+.help {
+  margin-left: 416px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 118px;
+  row-gap: 35px;
+  margin: 0 75px;
+}
+
+.help-item {
+  display: inline;
+
+  /* min-width: 153px;*/
+  text-align: center;
+}
+
+.help-icon-text {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
 }
