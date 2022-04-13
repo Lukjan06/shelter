@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  /*overflow-x: hidden;*/
+ 
   font-family: 'Arial'
     sans-serif;
   font-size: 15px;
@@ -44,12 +44,7 @@ body {
   color: #4c4c4c;
   max-width: 1280px;
   margin: 0 auto;
-  /* width: 100%;*/
-  /*padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;*/
+
 }
 
 .container {
@@ -65,10 +60,12 @@ body {
 .header {
   color: #cdcdcd;
   z-index: 10;
-  position: absolute;
+  position: sticky;
+  top: 0;
   max-width: 1280px;
   width: 100%;
   padding-top: 30px;
+  background-color: #ffffff;
 }
 
 .header-block {
@@ -105,6 +102,11 @@ body {
   align-self: center;
 }
 
+.logo-link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .nav {
   min-width: 484px; /**/
   margin-right: 0;
@@ -136,6 +138,7 @@ body {
   transform: 3s;
   cursor: pointer;
   position: relative;
+  padding-bottom: 4px;
 }
 
 .nav-link:after {
@@ -155,9 +158,120 @@ body {
   width: 100%;
 }
 
+.default {
+  border-bottom: 2px solid #F1CDB3;
+}
+
 /**/
 .main {
-  padding-top: 150px;
+  padding-top: 30px;
+
+}
+
+.wide {
+width: 100%;
+}
+
+.pets-slider {
+background: #F6F6F6;
+padding-top: 58px;
+}
+
+.pets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 33px;
+}
+
+.title {
+  max-width: 400px;
+  margin-left: 400px;
+  text-align: center;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #545454;
+padding-bottom: 33px;
+}
+
+span {
+  display: block;
+}
+
+.pets-slider-card {
+  display: flex;
+  width: 100%;
+  padding-top: 48px;
+  min-height: 435px;
+}
+
+.pet-card {
+  margin-right: 0px;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 29px;
+}
+
+.pet-card:hover {
+  cursor: pointer;
+}
+
+
+.pet-name {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+color: #545454;
+margin: 3px 0;
+padding: 24px;
+}
+
+.pet-card-button {
+width: 187px;
+border: 2px solid #f1cdb3;
+background: none;
+padding: 0;
+margin-bottom: 30px;
+height: 52px;
+border-radius: 35px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+}
+
+.pet-card-button:hover {
+background-color: #FDDCC4;
+cursor: pointer;
+}
+
+.slider {
+display: flex;
+flex-direction: row;
+justify-content: center;
+max-width: 340px;
+justify-content: space-between;
+margin: 0 auto;
+padding-bottom: 92px;
+}
+
+.active:hover {
+background: #FDDCC4;
+border-radius: 30px;
+height: 49px;
+cursor: pointer;
 }
 
 #footer {
@@ -168,7 +282,7 @@ body {
       #513d2f 0%,
       #1a1a1c 100%
     );
-  padding-top: 42px;
+  padding-top: 28px;
 }
 
 .footer {
@@ -210,7 +324,7 @@ body {
 .contact-link-text,
 .phone-number {
   margin-left: 18px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .location {
@@ -231,4 +345,6 @@ body {
 
 .footer-puppy {
   margin-left: 10px;
+  margin-top: 10px;
 }
+
